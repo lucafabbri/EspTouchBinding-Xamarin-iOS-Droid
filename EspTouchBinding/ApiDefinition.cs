@@ -491,6 +491,7 @@ namespace EspTouchBinding
 
 	// @interface EspTouch : NSObject
 	[BaseType(typeof(NSObject))]
+	[Protocol]
 	interface EspTouch
 	{
 	}

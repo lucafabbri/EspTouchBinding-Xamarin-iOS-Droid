@@ -5,13 +5,13 @@
 //
 using Foundation;
 
-namespace testesptouch
+namespace EspTouchBindingExample
 {
-    [Register("ViewController")]
-    partial class ViewController
-    {
-        void ReleaseDesignerOutlets()
-        {
-        }
-    }
+	[Register("ViewController")]
+	partial class ViewController
+	{
+		void ReleaseDesignerOutlets()
+		{
+		}
+	}
 }
