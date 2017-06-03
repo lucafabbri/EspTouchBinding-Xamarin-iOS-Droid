@@ -1,11 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchBinding", "EspTouchBinding\EspTouchBinding.csproj", "{97CCD616-363D-43A9-8453-BDE3E800FE3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchBinding_iOS", "EspTouchBinding\EspTouchBinding_iOS.csproj", "{97CCD616-363D-43A9-8453-BDE3E800FE3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{AAE8D580-D49C-41D5-AA4C-B6F117E069FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchBindingExample", "EspTouchBindingExample\EspTouchBindingExample.csproj", "{833593AA-C02A-4DCE-91E4-21BD6DBF335C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchBinding_Droid", "EspTouchBinding_Droid\EspTouchBinding_Droid.csproj", "{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,18 @@ Global
 		{833593AA-C02A-4DCE-91E4-21BD6DBF335C}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{833593AA-C02A-4DCE-91E4-21BD6DBF335C}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{833593AA-C02A-4DCE-91E4-21BD6DBF335C}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|iPhone.Build.0 = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{FA3DF10C-6CAE-4C1F-B7FE-9CEBC869AC59}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{833593AA-C02A-4DCE-91E4-21BD6DBF335C} = {AAE8D580-D49C-41D5-AA4C-B6F117E069FC}

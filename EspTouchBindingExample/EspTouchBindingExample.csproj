@@ -113,7 +113,7 @@
   <ItemGroup>
     <ProjectReference Include="..\EspTouchBinding\EspTouchBinding.csproj">
       <Project>{97CCD616-363D-43A9-8453-BDE3E800FE3B}</Project>
-      <Name>EspTouchBinding</Name>
+      <Name>EspTouchBinding_iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
