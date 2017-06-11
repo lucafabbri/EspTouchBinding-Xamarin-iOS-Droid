@@ -20,9 +20,15 @@ namespace EspTouchSmartConfigXamarin
             return _result.Bssid;
         }
 
-        public IPAddress getInetAddress()
-        {
-            return NSDataToIPAddress(_result.IpAddrData);
+        public byte[] getInetAddress()
+		{
+			byte[] address = null;
+			using (MemoryStream ms = new MemoryStream())
+			{
+                _result.IpAddrData.AsStream().CopyTo(ms);
+				address = ms.ToArray();
+			}
+            return address;
         }
 
         public bool isCancelled()
@@ -35,20 +41,20 @@ namespace EspTouchSmartConfigXamarin
             return _result.IsSuc;
         }
 
-		IPAddress NSDataToIPAddress(NSData data)
-		{
-			byte[] address = null;
-			using (MemoryStream ms = new MemoryStream())
-			{
-				data.AsStream().CopyTo(ms);
-				address = ms.ToArray();
-			}
-			SocketAddress sa = new SocketAddress(AddressFamily.InterNetwork, address.Length);
-			// do not overwrite the AddressFamily we provided
-			for (int i = 2; i < address.Length; i++)
-				sa[i] = address[i];
-			IPEndPoint ep = new IPEndPoint(IPAddress.Any, 0);
-			return (ep.Create(sa) as IPEndPoint).Address;
-		}
+		//IPAddress NSDataToIPAddress(NSData data)
+		//{
+		//	byte[] address = null;
+		//	using (MemoryStream ms = new MemoryStream())
+		//	{
+		//		data.AsStream().CopyTo(ms);
+		//		address = ms.ToArray();
+		//	}
+		//	SocketAddress sa = new SocketAddress(AddressFamily.InterNetwork, address.Length);
+		//	// do not overwrite the AddressFamily we provided
+		//	for (int i = 2; i < address.Length; i++)
+		//		sa[i] = address[i];
+		//	IPEndPoint ep = new IPEndPoint(IPAddress.Any, 0);
+		//	return (ep.Create(sa) as IPEndPoint).Address;
+		//}
     }
 }

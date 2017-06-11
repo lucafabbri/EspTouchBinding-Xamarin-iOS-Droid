@@ -17,9 +17,9 @@ namespace EspTouchSmartConfigXamarin
             return _result.Bssid;
         }
 
-        public IPAddress getInetAddress()
+        public byte[] getInetAddress()
         {
-            return new IPAddress(_result.InetAddress.GetAddress());
+            return _result.InetAddress.GetAddress();
         }
 
         public bool isCancelled()

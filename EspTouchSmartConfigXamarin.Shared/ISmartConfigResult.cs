@@ -32,6 +32,6 @@ namespace EspTouchSmartConfigXamarin
 		 * 
 		 * @return the ip device of the device
 		 */
-		IPAddress getInetAddress();
+		byte[] getInetAddress();
     }
 }
