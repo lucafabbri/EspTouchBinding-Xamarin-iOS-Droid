@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Please connect to WiFi to use setup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wifitext" />
+    <TextView
+        android:text="SSID"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ssid" />
+    <TextView
+        android:text="Passphrase"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password" />
+    <Button
+        android:id="@+id/setesp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET ESP SSID" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:text="Cancel"
+        android:enabled="false" />
+    <TextView
+        android:text="Insert your ssid value and its password. When you print the button make sure your ESP device is in &quot;SmartConfig&quot; mode (WIFI_STA mode listening to smart config UDP packages)"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textarea" />
+</LinearLayout>
