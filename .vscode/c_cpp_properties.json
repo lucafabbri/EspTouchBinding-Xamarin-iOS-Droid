@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "/Users/lucafabbri/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/cores/esp8266"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "/Users/lucafabbri/Library/Arduino15/packages/esp8266/hardware/esp8266/2.3.0/cores/esp8266"
+                ]
+            }
+        }
+    ]
+}

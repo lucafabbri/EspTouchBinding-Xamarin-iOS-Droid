@@ -29,6 +29,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchBindingExample_Form
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EspTouchSmartConfigXamarin.PCL", "EspTouchSmartConfigXamarin.PCL\EspTouchSmartConfigXamarin.PCL.csproj", "{0C60FEDC-EA56-48E7-8185-141BDA70ED54}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4DF0EDAA-AC20-4A9C-8C99-850DF7323546}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,5 +188,8 @@ Global
 		{D48331F0-EFED-4021-934D-7A20DC777FC6} = {AAE8D580-D49C-41D5-AA4C-B6F117E069FC}
 		{0A081015-38C2-4EA3-930C-4482F81969F6} = {AAE8D580-D49C-41D5-AA4C-B6F117E069FC}
 		{0C60FEDC-EA56-48E7-8185-141BDA70ED54} = {D531AABA-91F5-4517-95AE-8D7C1D05AE1E}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 0.2
 	EndGlobalSection
 EndGlobal

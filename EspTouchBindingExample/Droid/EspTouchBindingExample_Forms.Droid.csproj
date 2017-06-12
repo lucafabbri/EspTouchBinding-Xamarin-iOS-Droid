@@ -16,6 +16,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <ReleaseVersion>0.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -82,13 +83,13 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Java.Interop" />
     <Reference Include="EspTouchBinding_Droid">
-      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.0\lib\monoandroid71\EspTouchBinding_Droid.dll</HintPath>
+      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.2\lib\monoandroid71\EspTouchBinding_Droid.dll</HintPath>
     </Reference>
     <Reference Include="EspTouchSmartConfigXamarin">
-      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.0\lib\monoandroid71\EspTouchSmartConfigXamarin.dll</HintPath>
+      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.2\lib\monoandroid71\EspTouchSmartConfigXamarin.dll</HintPath>
     </Reference>
-    <Reference Include="Java.Interop" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />

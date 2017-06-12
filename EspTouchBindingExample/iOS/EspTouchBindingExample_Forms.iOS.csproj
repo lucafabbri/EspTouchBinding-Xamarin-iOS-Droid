@@ -9,6 +9,7 @@
     <RootNamespace>EspTouchBindingExample_Forms.iOS</RootNamespace>
     <AssemblyName>EspTouchBindingExample_Forms.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>0.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,10 +95,10 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="EspTouchBinding">
-      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.0\lib\xamarinios10\EspTouchBinding.dll</HintPath>
+      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.2\lib\xamarinios10\EspTouchBinding.dll</HintPath>
     </Reference>
     <Reference Include="EspTouchSmartConfigXamarin">
-      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.0\lib\xamarinios10\EspTouchSmartConfigXamarin.dll</HintPath>
+      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.2\lib\xamarinios10\EspTouchSmartConfigXamarin.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

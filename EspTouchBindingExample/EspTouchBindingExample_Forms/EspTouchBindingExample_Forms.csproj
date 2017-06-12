@@ -11,6 +11,7 @@
     <AssemblyName>EspTouchBindingExample_Forms</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <ReleaseVersion>0.2</ReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,7 @@
       <DependentUpon>EspTouchBindingExample_FormsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ISmartConfigHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -49,6 +51,9 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.231\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="EspTouchSmartConfigXamarin.PCL">
+      <HintPath>..\..\packages\EspTouchSmartConfigXamarin.1.0.2\lib\portable45-net45+win8+wpa81\EspTouchSmartConfigXamarin.PCL.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

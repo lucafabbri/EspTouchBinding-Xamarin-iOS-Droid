@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using EspTouchSmartConfigXamarin;
+using Xamarin.Forms;
 
 namespace EspTouchBindingExample_Forms
 {

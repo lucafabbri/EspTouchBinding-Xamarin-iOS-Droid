@@ -7,8 +7,8 @@
     <ProjectGuid>{BC37646A-F1F1-4A6F-8EDF-4C64F276CACF}</ProjectGuid>
     <Description>Porting of EspTouch Smart Config Library</Description>
     <PackageId>EspTouchSmartConfigXamarin</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
-    <Authors>lucafabbri</Authors>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Authors>Luca Fabbri</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
@@ -16,6 +16,13 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>EspTouchSmartConfigXamarin.NuGet</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>0.2</ReleaseVersion>
+    <Owners>Luca Fabbri</Owners>
+    <Copyright>2017 Zepfiro Srls</Copyright>
+    <Title>EspTouch Binding Library for Xamarin Android e iOS</Title>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Summary>Using Esp Touch Smart Config for ESP 8266 family iot devices. This Library works with Xamarin.Droid, Xamarin.iOS and Xamarin.Forms </Summary>
+    <PackageProjectUrl>https://github.com/lucafabbri/EspTouchBinding-Xamarin-iOS-Droid</PackageProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +42,10 @@
     <ProjectReference Include="..\EspTouchSmartConfigXamarin.iOS\EspTouchSmartConfigXamarin.iOS.csproj">
       <Project>{23E98D8A-F6F9-4BF5-A390-14343C12786B}</Project>
       <Name>EspTouchSmartConfigXamarin.iOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EspTouchSmartConfigXamarin.PCL\EspTouchSmartConfigXamarin.PCL.csproj">
+      <Project>{0C60FEDC-EA56-48E7-8185-141BDA70ED54}</Project>
+      <Name>EspTouchSmartConfigXamarin.PCL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
