@@ -119,6 +119,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="SmartConfigHelper_iOS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EspTouchBindingExample_Forms\EspTouchBindingExample_Forms.csproj">
