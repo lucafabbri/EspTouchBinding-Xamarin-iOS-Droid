@@ -4,10 +4,10 @@ This is a porting of <a href="https://github.com/EspressifApp/EsptouchForIOS.git
 
 <h2>#XAMARIN IOS</h2>
 
-```csharp
+<code>
 	ESPTouchTask ett = new ESPTouchTask("<SSID>", "<BSSID>", "<PASSPHRASE>");
 	var result = ett.ExecuteForResult;
-```
+<code>
       
 <h2>#XAMARIN DROID</h2>
 
@@ -27,4 +27,4 @@ This is a porting of <a href="https://github.com/EspressifApp/EsptouchForIOS.git
         ISmartConfigTask TaskFactory(string ssid, string bssid, string passphrase, bool isHidden);
         ISmartConfigTask TaskFactory(string ssid, string bssid, string passphrase, bool isHidden, int timeoutMillis);
     }
-```
+    ```
