@@ -15,17 +15,3 @@ This is a porting of [EsptouchForIOS](https://github.com/EspressifApp/EsptouchFo
     EsptouchTask mEsptouchTask = new EsptouchTask("<SSID>", "<BSSID>", "<PASSPHRASE>", true, Application.Context);
     IEsptouchResult result = mEsptouchTask.ExecuteForResult();
 ```
-
-## XAMARIN FORMS
-
-In order to use the library in a Xamarin.Forms project we are going to create an Helper. We will then instantiate it with a specific platform implementation
-
-```csharp
-    public interface ISmartConfigHelper
-    {
-        ISmartConfigTask TaskFactory(string ssid, string bssid, string passphrase);
-        ISmartConfigTask TaskFactory(string ssid, string bssid, string passphrase, bool isHidden);
-        ISmartConfigTask TaskFactory(string ssid, string bssid, string passphrase, bool isHidden, int timeoutMillis);
-    }
-
-```
