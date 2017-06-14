@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:EspTouchBindingExample_Forms" x:Class="EspTouchBindingExample_Forms.EspTouchBindingExample_FormsPage" Padding="20">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+            <Label Text="Connect to this Network" FontAttributes="Bold" />
+            <Entry Text="{Binding Ssid}" />
+            <Label Text="Enter Passphrase" FontAttributes="Bold" />
+            <Entry Text="{Binding Passphrase}" />
+            <Button Text="Setup" Clicked="Handle_Clicked" />
+            <Label Text="{Binding Message}" FontSize="10" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

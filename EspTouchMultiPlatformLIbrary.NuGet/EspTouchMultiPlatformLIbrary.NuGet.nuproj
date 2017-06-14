@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43CBE995-9960-438A-A29C-BC8D2708D182}</ProjectGuid>
+    <Description>Porting of EspTouch Smart Config Library for ESP8266 Devices in a Cross Platform Xamrin Based Fancy</Description>
+    <PackageId>EspTouchSmartConfigXamarin</PackageId>
+    <PackageVersion>1.0.3</PackageVersion>
+    <Authors>Luca Fabbri</Authors>
+    <Owners>Zepfiro Srls</Owners>
+    <DevelopmentDependency>false</DevelopmentDependency>
+    <Title>EspTouch MultiPlatform LIbrary</Title>
+    <Summary>Porting of EspTouch Smart Config Library for ESP8266 Devices in a Cross Platform Xamrin Based Fancy</Summary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EspTouchMultiPlatformLIbrary.NuGet</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>EspTouchMultiPlatformLIbrary.NuGet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EspTouchMultiPlatformLIbrary\EspTouchMultiPlatformLIbrary.csproj">
+      <Project>{2AB7B5A7-B02C-461A-B6EC-FC17AE01E3DA}</Project>
+      <Name>EspTouchMultiPlatformLIbrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EspTouchMultiPlatformLIbrary.Android\EspTouchMultiPlatformLIbrary.Android.csproj">
+      <Project>{542180DD-3FFB-4175-A4E7-8B034CD0CEA3}</Project>
+      <Name>EspTouchMultiPlatformLIbrary.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EspTouchMultiPlatformLIbrary.iOS\EspTouchMultiPlatformLIbrary.iOS.csproj">
+      <Project>{7EFAB232-37CC-4FB7-BA48-5114849DED05}</Project>
+      <Name>EspTouchMultiPlatformLIbrary.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.1.248</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>

@@ -113,11 +113,11 @@ namespace EspTouchBindingExample_Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040000
-			public const int app_name = 2130968576;
-			
 			// aapt resource value: 0x7f040001
-			public const int hello = 2130968577;
+			public const int app_name = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int hello = 2130968576;
 			
 			static String()
 			{
