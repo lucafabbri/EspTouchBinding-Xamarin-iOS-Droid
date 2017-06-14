@@ -9,9 +9,9 @@ Please use NuGet to installa the library in your Xamarin.iOS, Xamarin.Droid or X
 ```nuget
 Install-Package EspTouchSmartConfigXamarin
 ```
-#USE
+# USE
 
-## XAMRIN FORMS
+## XAMARIN FORMS
 
 You need to use Dependency Service to get a Platform specific implementation of the SmartConfigTask
 
@@ -50,7 +50,7 @@ namespace EspTouchBindingExample_Forms.iOS
 }
 ```
 
-### Android Project
+### ANDROID Project
 
 ```csharp
 using System;
